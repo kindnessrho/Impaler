@@ -224,7 +224,7 @@ padding: 15px 0 0; }
 
 
 #resume .section-heading h3{
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -281,7 +281,7 @@ padding: 15px 0 0; }
   .experiences-box .text span {
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 300; }
+    font-weight: 400; }
 
 .experiences-box label {
   font-size: 16px;
@@ -321,7 +321,7 @@ padding: 15px 0 0; }
 }
 
 .contact-section .container .section-heading h3{
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;

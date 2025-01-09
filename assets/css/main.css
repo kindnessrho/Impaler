@@ -11,9 +11,38 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@font-face {
+  font-family: 'OutrequeBoldSlanted';
+  src: url('/assets/fonts/outreque/OutrequeBoldSlanted.ttf') format('truetype');
+  font-weight: bold; /* Regular weight */
+}
+
+@font-face {
+  font-family: 'OutrequeMedium';
+  src: url('/assets/fonts/outreque/OutrequeMedium.ttf') format('truetype');
+  /*👉font-weight: 400; 👈*//* Regular weight */
+}
+
+/*👉@font-face {
+  font-family: 'OutrequeExtraBlackSlanted';
+  src: url('/assets/fonts/outreque/OutrequeExtrablackSlanted.ttf') format('truetype');
+  font-weight: bold; ➡ Regular weight ⬅
+}👈*/
+
+
+
+
+/*👉@font-face {
+  font-family: 'Malinton';
+  src: url('/assets/fonts/malinton-font/MalintontrialversionBold-zrlJl.otf') format('opentype');
+  font-weight: bold; ➡ Regular weight ⬅
+}👈*/
+
+
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "OutrequeBoldSlanted",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -83,6 +112,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-weight: 400!important;
 }
 
 a {
@@ -97,13 +127,17 @@ a:hover {
 }
 
 h1,
-h2,
+h2{
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
 h3,
 h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: "OutrequeMedium";
 }
 
 /* PHP Email Form Messages
@@ -197,7 +231,7 @@ h6 {
   font-size: 24px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #ffffff;
 }
 
 .header .social-links {
@@ -422,7 +456,7 @@ h6 {
     color: transparent; /* Make the text color transparent to show the gradient */
   font-size: 18px;
   text-decoration: underline!important;
-  border: 4px solid red;
+/*👉  border: 4px solid red;👈*/
 }
 
 /*--------------------------------------------------------------
@@ -470,7 +504,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -558,12 +592,12 @@ section,
   position: relative;
 }
 
-.section-title h2 {
-  font-size: 32px;
+.portfolio .section-title h3 {
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
  /*👉 padding-bottom: 20px;👈*/
-  position: relative;
+  /*👉position: relative;👈*/
 }
 
 /*👉.section-title h2:after {
@@ -657,21 +691,27 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 75px;
+  font-weight: bold;
   line-height: 115%;
-  width: 70%;
+  width: 75%;
   color: #202124;
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
   color:#4E4E4E;
+  width: 60%;
   /*👉color: var(--heading-color);👈*/
 
 }
+
+.hero-btn-ctn{
+  margin-top: 60px;
+}
+
 
 .hero p span {
   letter-spacing: 1px;
@@ -696,26 +736,49 @@ section,
 }
 
 @media (max-width: 768px) {
+    .hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .hero h2 {
-    font-size: 32px;
+    background-color: #adeed0;
+    font-size: 45px;
   }
 
   .hero p {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+
+  @media (max-width: 600px) {
+  body{
+    background-color: red;
   }
 }
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h1 {
+.about .content h2 {
   font-weight: 700;
   font-size: 36px;
 }
 
-.about .content h2 {
-  font-weight: 500;
-  font-size: 24px;
+.about .content h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.about .content p {
+  font-family: var(--default-font);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .about .content ul {
