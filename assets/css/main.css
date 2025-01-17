@@ -13,15 +13,17 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'OutrequeBoldSlanted';
-  src: url('/assets/fonts/outreque/OutrequeBoldSlanted.ttf') format('truetype');
-  font-weight: bold; /* Regular weight */
+  font-family: "OutrequeBoldSlanted";
+  src: url("/assets/fonts/outreque/OutrequeBoldSlanted.ttf") format("truetype");
+  font-weight: bold;
+  /* Regular weight */
 }
 
 @font-face {
-  font-family: 'OutrequeMedium';
-  src: url('/assets/fonts/outreque/OutrequeMedium.ttf') format('truetype');
-  /*👉font-weight: 400; 👈*//* Regular weight */
+  font-family: "OutrequeMedium";
+  src: url("/assets/fonts/outreque/OutrequeMedium.ttf") format("truetype");
+  /*👉font-weight: 400; 👈*/
+  /* Regular weight */
 }
 
 /*👉@font-face {
@@ -30,40 +32,50 @@
   font-weight: bold; ➡ Regular weight ⬅
 }👈*/
 
-
-
-
 /*👉@font-face {
   font-family: 'Malinton';
   src: url('/assets/fonts/malinton-font/MalintontrialversionBold-zrlJl.otf') format('opentype');
   font-weight: bold; ➡ Regular weight ⬅
 }👈*/
 
-
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "OutrequeBoldSlanted",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "OutrequeBoldSlanted", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #050d18;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #149ddd;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #a8a9b4;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #040b14;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #040b14;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #a8a9b4;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -112,7 +124,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  font-weight: 400!important;
+  font-weight: 400 !important;
 }
 
 a {
@@ -127,7 +139,7 @@ a:hover {
 }
 
 h1,
-h2{
+h2 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
@@ -202,12 +214,13 @@ h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 15px;
+  padding: 30px 15px 0px 15px;
   width: 300px;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .header .profile-img img {
@@ -259,9 +272,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 300px;
   }
 }
@@ -278,7 +290,22 @@ h6 {
 
 .header .header-toggle {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(251deg 94% 25%) 9%,
+    hsl(256deg 87% 30%) 19%,
+    hsl(259deg 81% 36%) 30%,
+    hsl(261deg 76% 41%) 41%,
+    hsl(263deg 73% 47%) 51%,
+    hsl(265deg 79% 53%) 61%,
+    hsl(267deg 81% 55%) 71%,
+    hsl(268deg 82% 56%) 80%,
+    hsl(269deg 83% 58%) 87%,
+    hsl(271deg 85% 60%) 94%,
+    hsl(272deg 87% 62%) 98%,
+    hsl(273deg 89% 64%) 100%
+  );
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -368,7 +395,7 @@ h6 {
 .navmenu a:hover .navicon,
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
-  color: var(--accent-color);
+  /*👉color: var(--accent-color);👈*/
 }
 
 .navmenu .active .toggle-dropdown,
@@ -409,7 +436,7 @@ h6 {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
@@ -421,9 +448,10 @@ h6 {
   color: var(--default-color);
   background-color: #f7f2fe;
   font-size: 18px;
-  padding: 40px 0;
+  /*👉padding: 40px 0;👈*/
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -436,27 +464,32 @@ h6 {
   text-align: center;
 }
 
-
 .footer .credits a strong {
-  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 18px;
-  text-decoration: underline!important;
+  text-decoration: underline !important;
 }
 
-
 .footer .credits a {
-  font-size: 72px!important; /* Adjust the font size as needed */
-    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);/* Define your gradient colors */
-    background-clip: content-box; /* Clip the background to the text */
-    -webkit-background-clip: text; /* For Safari */
-    color: transparent; /* Make the text color transparent to show the gradient */
+  font-size: 72px !important;
+  /* Adjust the font size as needed */
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  /* Define your gradient colors */
+  background-clip: content-box;
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  /* For Safari */
+  color: transparent;
+  /* Make the text color transparent to show the gradient */
   font-size: 18px;
-  text-decoration: underline!important;
-/*👉  border: 4px solid red;👈*/
+  text-decoration: underline !important;
+  /*👉  border: 4px solid red;👈*/
 }
 
 /*--------------------------------------------------------------
@@ -504,7 +537,8 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -562,11 +596,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -596,7 +630,7 @@ section,
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
- /*👉 padding-bottom: 20px;👈*/
+  /*👉 padding-bottom: 20px;👈*/
   /*👉position: relative;👈*/
 }
 
@@ -620,9 +654,9 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  /*👉  min-height: 100vh;👈*/
   position: relative;
-  padding: 80px 0;
+  padding: 150px 0px 120px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -631,11 +665,11 @@ section,
 .bg-h {
   width: 100%;
   height: 100%;
-  display: flex;                
-  justify-content: center;       
-  align-items: center;          
-  position: absolute;   
- /*👉 border: 1px solid red;       👈*/ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /*👉 border: 1px solid red;       👈*/
 }
 
 .hero .hero-bg {
@@ -646,23 +680,27 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  /*👉border: 5px solid green; 👈*/   
+  /*👉border: 5px solid green; 👈*/
   /*👉top: 0px; 
   right: 0px;    
   bottom: 0px;     
-  left: 0px;   👈*/      
+  left: 0px;   👈*/
 }
 
 .bg-h::after {
-  content: ""; 
+  content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 10%; 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* White fade */
+  height: 10%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  /* White fade */
 }
- 
 
 .hero:before {
   content: "";
@@ -677,16 +715,16 @@ section,
   z-index: 3;
 }
 
-.hero-content{
-/*👉  border: 2px solid red;👈*/
-  height: 60vh;
+.hero-content {
+  /*👉  border: 2px solid red;👈*/
+  /*👉 height: 60vh;👈*/
 }
 
-.hero-head-sub-head{
+.hero-head-sub-head {
   width: 100%;
-  gap: 15px;
-  height:35vh;
-/*👉  border: 3px solid green;👈*/
+  gap: 5px;
+  /*👉 height:35vh;👈*/
+  /*👉  border: 3px solid green;👈*/
 }
 
 .hero h2 {
@@ -694,24 +732,68 @@ section,
   font-size: 75px;
   font-weight: bold;
   line-height: 115%;
-  width: 75%;
+  /*👉 width: 75%;👈*/
+  width: 90%;
   color: #202124;
+}
+
+/*👉.hero h2 > span {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(251deg 94% 25%) 9%,
+    hsl(256deg 87% 30%) 19%,
+    hsl(259deg 81% 36%) 30%,
+    hsl(261deg 76% 41%) 41%,
+    hsl(263deg 73% 47%) 51%,
+    hsl(265deg 79% 53%) 61%,
+    hsl(267deg 81% 55%) 71%,
+    hsl(268deg 82% 56%) 80%,
+    hsl(269deg 83% 58%) 87%,
+    hsl(271deg 85% 60%) 94%,
+    hsl(272deg 87% 62%) 98%,
+    hsl(273deg 89% 64%) 100%
+  );
+  color: white;
+  padding: 0px 8px 0px 5px;
+}👈*/
+
+.hero h2>span{
+  background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(251deg 94% 25%) 9%,
+      hsl(256deg 87% 30%) 19%,
+      hsl(259deg 81% 36%) 30%,
+      hsl(261deg 76% 41%) 41%,
+      hsl(263deg 73% 47%) 51%,
+      hsl(265deg 79% 53%) 61%,
+      hsl(267deg 81% 55%) 71%,
+      hsl(268deg 82% 56%) 80%,
+      hsl(269deg 83% 58%) 87%,
+      hsl(271deg 85% 60%) 94%,
+      hsl(272deg 87% 62%) 98%,
+      hsl(273deg 89% 64%) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    text-decoration: underline !important;
 }
 
 .hero p {
   margin: 5px 0 0 0;
+  font-family: var(--default-font);
   font-size: 18px;
+  font-weight: 400;
   line-height: 130%;
-  color:#4E4E4E;
-  width: 60%;
+  color: #4e4e4e;
+  width: 70%;
   /*👉color: var(--heading-color);👈*/
-
 }
 
-.hero-btn-ctn{
-  margin-top: 60px;
+.hero-btn-ctn {
+  margin-top: 48px;
 }
-
 
 .hero p span {
   letter-spacing: 1px;
@@ -736,30 +818,132 @@ section,
 }
 
 @media (max-width: 768px) {
-    .hero {
+  .hero {
     width: 100%;
-    min-height: 100vh;
+    /*👉min-height: 100vh;👈*/
     position: relative;
-    padding: 80px 0;
+    /*👉padding: 80px 0;👈*/
+    padding: 250px 0px 120px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .hero .hero-bg{
+    object-fit: contain;
+  }
+
+  .bg-h::after {
+    bottom: 60px;
+  }
+
+  .bg-h {
+    top: -20px;
+  }
+
   .hero h2 {
-    background-color: #adeed0;
-    font-size: 45px;
+    width: 100%;
+}
+
+  .hero h2 {
+    /*👉background-color: #adeed0;👈*/
+    font-size: 62px;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .experience-sec .cv-cover{
+    
+    padding-bottom: 10px;
+ 
   }
 }
 
-  @media (max-width: 600px) {
-  body{
-    background-color: red;
+@media (max-width: 575px) {
+
+  #hero {
+    padding: 150px 0px 50px 0px!important;
   }
+
+  .hero h2 {
+    /*👉background-color: #adeed0;👈*/
+    font-size: 45px;
+
+  }
+
+  .bg-h::after {
+    bottom: 60px;
+}
+
+
+  .hero p {
+    width: 100%;
+  }
+
+
+  .bg-h {
+    top: 0px;
+}
+
+.hero .hero-bg {
+  height: 140%;
+  object-fit: fill;
+}
+
+.bg-h::after {
+  position: relative;
+ /*👉 border: 3px solid red;👈*/
+  position: absolute;
+  bottom: 0px;
+  /*👉background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 95%) 0%,
+    hsl(0deg 0% 96%) 10%, ➡ Slight increase in lightness ⬅
+    hsl(0deg 0% 97%) 20%,
+    hsl(0deg 0% 98%) 30%,
+    hsl(0deg 0% 99%) 40%,
+    hsl(0deg 0% 100%) 50%, ➡ Pure white at the midpoint ⬅
+    hsl(0deg 0% 99%) 60%,
+    hsl(0deg 0% 98%) 70%,
+    hsl(0deg 0% 97%) 80%,
+    hsl(0deg 0% 96%) 90%,
+    hsl(0deg 0% 95%) 100%
+);👈*/
+  /*👉background: linear-gradient(to bottom, rgb(255 255 255 / 86%) 0%, rgba(255, 255, 255, 1) 80%);👈*/
+}
+
+section, .section {
+  padding: 45px 6px!important;
+}
+
+#resume .section-heading h3 {
+  text-align: left!important;
+  padding-bottom: 10px!important;
+  /*👉font-size: 36px!important;
+  font-weight: 700!important;
+  margin-bottom: 20px!;
+  text-align: center!;👈*/
+}
+
+.experience-sec{
+  padding-top: 0px!important;
+}
+
+.experience-sec .cv-cover{
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+
+.experience-sec .experience-col{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -769,6 +953,13 @@ section,
   font-weight: 700;
   font-size: 36px;
 }
+
+
+.about .content .title {
+  font-size: 36px;
+    font-weight: 700;
+}
+
 
 .about .content h3 {
   font-weight: 400;
@@ -800,14 +991,17 @@ section,
   font-size: 16px;
   margin-right: 5px;
   /*👉color: var(--accent-color);👈*/
-  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
-    -webkit-background-clip: text; /* For Safari */
-    -moz-background-clip: text;    /* For Firefox */
-    background-clip: text;
-    color: transparent; /* Make the text color transparent */
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  -webkit-background-clip: text;
+  /* For Safari */
+  -moz-background-clip: text;
+  /* For Firefox */
+  background-clip: text;
+  color: transparent;
+  /* Make the text color transparent */
   line-height: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -984,10 +1178,11 @@ section,
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
-  padding: 5px;
- /*👉 background: white;👈*/
+  padding: 4px;
+  /*👉 background: white;👈*/
   border-radius: 8px;
-  background-image: linear-gradient(
+  background-color: hsl(268deg, 82%, 56%, 0.2);
+ /*👉 background-image: linear-gradient(
     45deg,
     hsl(240deg 100% 20%) 0%,
     hsl(251deg 94% 25%) 9%,
@@ -1002,7 +1197,61 @@ section,
     hsl(271deg 85% 60%) 94%,
     hsl(272deg 87% 62%) 98%,
     hsl(273deg 89% 64%) 100%
-  );
+  );👈*/
+}
+
+.portfolio-content .portfolio-img-arrow {
+  position: absolute;
+  top: 7%;
+  right: -55%;
+  bottom: 0%;
+  transform: rotate(90deg);
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+  background-color: hsl(268deg, 82%, 56%, 0.2);
+  border-radius: 0px 0px 100px 100px;
+  /*👉border-radius: 8px;👈*/
+ /*👉 border: 4px solid;👈*/
+
+}
+
+.portfolio-content .portfolio-img-arrow .fixed-arrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2%;
+  border-radius: 0px 0px 100px 100px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.921);
+}
+
+.portfolio-content .portfolio-img-arrow .fixed-arrow i{
+ font-size: 20px;
+font-weight: bolder;
+ background: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(251deg 94% 25%) 9%,
+  hsl(256deg 87% 30%) 19%,
+  hsl(259deg 81% 36%) 30%,
+  hsl(261deg 76% 41%) 41%,
+  hsl(263deg 73% 47%) 51%,
+  hsl(265deg 79% 53%) 61%,
+  hsl(267deg 81% 55%) 71%,
+  hsl(268deg 82% 56%) 80%,
+  hsl(269deg 83% 58%) 87%,
+  hsl(271deg 85% 60%) 94%,
+  hsl(272deg 87% 62%) 98%,
+  hsl(273deg 89% 64%) 100%
+);
+transition: 0.3s;
+line-height: 1.2;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 
 .portfolio .portfolio-content img {
@@ -1018,14 +1267,14 @@ section,
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.8);
   padding: 15px;
- /*👉 border: 2px solid green;👈*/
+  /*👉 border: 2px solid green;👈*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
- /*👉 font-size: 14px;
+  /*👉 font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
@@ -1056,12 +1305,12 @@ section,
 
 /*👉.portfolio .portfolio-content .portfolio-info .preview-link,👈*/
 .portfolio .portfolio-content .portfolio-info .details-link i {
-/*👉  border: 2px solid red;👈*/
+  /*👉  border: 2px solid red;👈*/
   /*👉position: absolute;
   left: calc(50% - 40px);👈*/
   font-size: 26px;
   /*👉top: calc(50% - 14px);👈*/
-  background:  linear-gradient(
+  background: linear-gradient(
     45deg,
     hsl(240deg 100% 20%) 0%,
     hsl(251deg 94% 25%) 9%,
@@ -1080,21 +1329,22 @@ section,
   transition: 0.3s;
   line-height: 1.2;
   padding: 5px 10px;
- /*👉 background-color: white;👈*/
+  /*👉 background-color: white;👈*/
 
-/*👉 background: linear-gradient(45deg, #ff6b6b, #f7d94b);👈*/ /* Gradient color */
-    -webkit-background-clip: text; /* For Safari */
-    -webkit-text-fill-color: transparent; /* Make text transparent for gradient effect */
-   
-    
+  /*👉 background: linear-gradient(45deg, #ff6b6b, #f7d94b);👈*/
+  /* Gradient color */
+  -webkit-background-clip: text;
+  /* For Safari */
+  -webkit-text-fill-color: transparent;
+  /* Make text transparent for gradient effect */
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link{
-  display: flex!important;
-  justify-content: center!important;
-  align-items: center!important;
-  background-color: white!important;
-/*👉  border: 2px solid red!important;👈*/
+.portfolio .portfolio-content .portfolio-info .details-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: white !important;
+  /*👉  border: 2px solid red!important;👈*/
   padding: 1px 40px;
   border-radius: 12px;
 
@@ -1120,6 +1370,66 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
+}
+
+
+@media (max-width: 912px) {
+  .portfolio-content .portfolio-img-arrow {
+    right: -50%!important;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .portfolio-content .portfolio-img-arrow {
+    top: 23%;
+    right: -32% !important;
+  }
+
+  .portfolio-heading {
+  align-items: start!important;
+  padding-bottom: 30px!important;
+
+  }
+}
+
+@media (max-width: 431px) {
+  .portfolio-content .portfolio-img-arrow {
+    top: 16% !important;
+    right: -42% !important;
+  }
+}
+
+@media (max-width: 391px) {
+  .portfolio-content .portfolio-img-arrow {
+    top: 12% !important;
+    right: -47% !important;
+  }
+}
+
+
+@media (max-width: 361px) {
+  .portfolio-content .portfolio-img-arrow {
+    top: 9% !important;
+    right: -51% !important;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .portfolio-content .portfolio-img-arrow {
+    top: 4% !important;
+    right: -59% !important;
+
+  }
+
+/*👉  .experience-sec .cv-cover {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+}👈*/
 }
 
 /*--------------------------------------------------------------
@@ -1336,8 +1646,8 @@ section,
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1348,19 +1658,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1369,7 +1679,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
@@ -1385,14 +1695,20 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
@@ -1406,7 +1722,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1415,7 +1732,7 @@ section,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
