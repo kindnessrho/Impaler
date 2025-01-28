@@ -1,15 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 
 @font-face {
@@ -26,17 +15,6 @@
   /* Regular weight */
 }
 
-/*👉@font-face {
-  font-family: 'OutrequeExtraBlackSlanted';
-  src: url('/assets/fonts/outreque/OutrequeExtrablackSlanted.ttf') format('truetype');
-  font-weight: bold; ➡ Regular weight ⬅
-}👈*/
-
-/*👉@font-face {
-  font-family: 'Malinton';
-  src: url('/assets/fonts/malinton-font/MalintontrialversionBold-zrlJl.otf') format('opentype');
-  font-weight: bold; ➡ Regular weight ⬅
-}👈*/
 
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -92,25 +70,6 @@
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
-
-/*👉.custom-gradient {
-  background-image: linear-gradient(
-    45deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(251deg 94% 25%) 9%,
-    hsl(256deg 87% 30%) 19%,
-    hsl(259deg 81% 36%) 30%,
-    hsl(261deg 76% 41%) 41%,
-    hsl(263deg 73% 47%) 51%,
-    hsl(265deg 79% 53%) 61%,
-    hsl(267deg 81% 55%) 71%,
-    hsl(268deg 82% 56%) 80%,
-    hsl(269deg 83% 58%) 87%,
-    hsl(271deg 85% 60%) 94%,
-    hsl(272deg 87% 62%) 98%,
-    hsl(273deg 89% 64%) 100%
-  );
-}👈*/
 
 /* Smooth scroll */
 :root {
@@ -268,7 +227,8 @@ h6 {
 
 .header .social-links a:hover {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: color-mix(in srgb, var(--default-color), transparent 94%);
+  /*👉background: var(--accent-color);👈*/
 }
 
 @media (min-width: 1200px) {
@@ -510,12 +470,13 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: #854fee transparent #854fee transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
 }
+
 
 @keyframes animate-preloader {
   0% {
@@ -630,20 +591,8 @@ section,
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
-  /*👉 padding-bottom: 20px;👈*/
-  /*👉position: relative;👈*/
+  
 }
-
-/*👉.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  bottom: 0;
-}👈*/
 
 .section-title p {
   margin-bottom: 0;
@@ -736,27 +685,6 @@ section,
   width: 90%;
   color: #202124;
 }
-
-/*👉.hero h2 > span {
-  background-image: linear-gradient(
-    45deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(251deg 94% 25%) 9%,
-    hsl(256deg 87% 30%) 19%,
-    hsl(259deg 81% 36%) 30%,
-    hsl(261deg 76% 41%) 41%,
-    hsl(263deg 73% 47%) 51%,
-    hsl(265deg 79% 53%) 61%,
-    hsl(267deg 81% 55%) 71%,
-    hsl(268deg 82% 56%) 80%,
-    hsl(269deg 83% 58%) 87%,
-    hsl(271deg 85% 60%) 94%,
-    hsl(272deg 87% 62%) 98%,
-    hsl(273deg 89% 64%) 100%
-  );
-  color: white;
-  padding: 0px 8px 0px 5px;
-}👈*/
 
 .hero h2>span{
   background-image: linear-gradient(
@@ -897,21 +825,6 @@ section,
  /*👉 border: 3px solid red;👈*/
   position: absolute;
   bottom: 0px;
-  /*👉background-image: linear-gradient(
-    45deg,
-    hsl(0deg 0% 95%) 0%,
-    hsl(0deg 0% 96%) 10%, ➡ Slight increase in lightness ⬅
-    hsl(0deg 0% 97%) 20%,
-    hsl(0deg 0% 98%) 30%,
-    hsl(0deg 0% 99%) 40%,
-    hsl(0deg 0% 100%) 50%, ➡ Pure white at the midpoint ⬅
-    hsl(0deg 0% 99%) 60%,
-    hsl(0deg 0% 98%) 70%,
-    hsl(0deg 0% 97%) 80%,
-    hsl(0deg 0% 96%) 90%,
-    hsl(0deg 0% 95%) 100%
-);👈*/
-  /*👉background: linear-gradient(to bottom, rgb(255 255 255 / 86%) 0%, rgba(255, 255, 255, 1) 80%);👈*/
 }
 
 section, .section {
@@ -921,10 +834,6 @@ section, .section {
 #resume .section-heading h3 {
   text-align: left!important;
   padding-bottom: 10px!important;
-  /*👉font-size: 36px!important;
-  font-weight: 700!important;
-  margin-bottom: 20px!;
-  text-align: center!;👈*/
 }
 
 .experience-sec{
@@ -1182,22 +1091,6 @@ section, .section {
   /*👉 background: white;👈*/
   border-radius: 8px;
   background-color: hsl(268deg, 82%, 56%, 0.2);
- /*👉 background-image: linear-gradient(
-    45deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(251deg 94% 25%) 9%,
-    hsl(256deg 87% 30%) 19%,
-    hsl(259deg 81% 36%) 30%,
-    hsl(261deg 76% 41%) 41%,
-    hsl(263deg 73% 47%) 51%,
-    hsl(265deg 79% 53%) 61%,
-    hsl(267deg 81% 55%) 71%,
-    hsl(268deg 82% 56%) 80%,
-    hsl(269deg 83% 58%) 87%,
-    hsl(271deg 85% 60%) 94%,
-    hsl(272deg 87% 62%) 98%,
-    hsl(273deg 89% 64%) 100%
-  );👈*/
 }
 
 .portfolio-content .portfolio-img-arrow {
@@ -1212,8 +1105,6 @@ section, .section {
   padding: 4px;
   background-color: hsl(268deg, 82%, 56%, 0.2);
   border-radius: 0px 0px 100px 100px;
-  /*👉border-radius: 8px;👈*/
- /*👉 border: 4px solid;👈*/
 
 }
 
@@ -1274,12 +1165,6 @@ line-height: 1.2;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  /*👉 font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
-  color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);👈*/
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -1290,18 +1175,6 @@ line-height: 1.2;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
-
-/*👉.portfolio .portfolio-content .portfolio-info p {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}👈*/
 
 /*👉.portfolio .portfolio-content .portfolio-info .preview-link,👈*/
 .portfolio .portfolio-content .portfolio-info .details-link i {
@@ -1432,155 +1305,6 @@ line-height: 1.2;
 }👈*/
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-/*👉.services .service-item {
-  position: relative;
-}
-
-.services .service-item .icon {
-  background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid var(--accent-color);
-  margin-right: 20px;
-}
-
-.services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .service-item:hover .icon {
-  background: var(--surface-color);
-}
-
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
-}
-
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-}👈*/
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-/*👉.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  text-align: center;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
-  padding: 20px;
-  background-color: var(--surface-color);
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials .testimonial-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid var(--surface-color);
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 40px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--background-color);
-  opacity: 1;
-  border: 1px solid var(--accent-color);
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}👈*/
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1750,71 +1474,6 @@ line-height: 1.2;
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
-
-/*--------------------------------------------------------------
-# Service Details Section
---------------------------------------------------------------*/
-/*👉.service-details .services-list {
-  padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
-}
-
-.service-details .services-list a {
-  display: block;
-  line-height: 1;
-  padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: 0.3s;
-}
-
-.service-details .services-list a.active {
-  color: var(--heading-color);
-  font-weight: 700;
-  border-color: var(--accent-color);
-}
-
-.service-details .services-list a:hover {
-  border-color: var(--accent-color);
-}
-
-.service-details .services-img {
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-details h4 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}👈*/
 
 /*--------------------------------------------------------------
 # Starter Section Section
